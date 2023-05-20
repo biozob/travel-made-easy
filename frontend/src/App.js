@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import SearchResultList from './pages/SearchResultList';
 import Layout from './components/Layout/Layout';
+import ThankYou from './pages/ThankYou';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: 'tours/:id', element: <TourDetails /> },
       { path: 'login', element: <Login /> },
       { path: 'register', element: <Register /> },
+      { path: 'thank-you', element: <ThankYou /> },
       { path: 'tours/search', element: <SearchResultList /> },
     ],
   },
