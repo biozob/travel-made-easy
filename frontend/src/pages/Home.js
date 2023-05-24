@@ -27,10 +27,12 @@ const Home = () => {
                   <Subtitle subtitle={'Know before you Go'} />
                   <img src={worldImg} alt='' />
                 </div>
+
                 <h1>
                   Traveling opens the door to creating{' '}
                   <span className='highlight'>memories</span>
                 </h1>
+
                 <p>
                   The standard chunk of Lorem Ipsum used since the 1500s is
                   reproduced below for those interested. Sections 1.10.32 and
@@ -46,7 +48,7 @@ const Home = () => {
               </div>
             </Col>
             <Col lg='2'>
-              <div className='hero__img-box mt-4'>
+              <div className='hero__img-box hero__video-box mt-4'>
                 <video src={heroVideo} alt='' controls />
               </div>
             </Col>
@@ -90,6 +92,7 @@ const Home = () => {
             <Col lg='6'>
               <div className='experience__content'>
                 <Subtitle subtitle={'Experience'} />
+
                 <h2>
                   With our all experience <br /> we will serve you
                 </h2>
