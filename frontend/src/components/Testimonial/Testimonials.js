@@ -37,57 +37,45 @@ const Testimonials = () => {
   return (
     <Slider {...settings}>
       <div className='testimonial py-4 px-3'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
         <div className='d-flex align-items-center gap-4 mt-3'>
           <img src={ava01} alt='' className='w-25 h-25 rounded-2' />
           <div>
-            <h6 className='mb-0 mt-3'>John Doe</h6>
-            <p>Customer</p>
+            <h6 className='mb-0 mt-3'>Peter</h6>
+            <p>Writer</p>
           </div>
         </div>
-      </div>
-      <div className='testimonial py-4 px-3'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          eiusmod tempor incididunt ut
         </p>
+      </div>
+      <div className='testimonial py-4 px-3'>
         <div className='d-flex align-items-center gap-4 mt-3'>
           <img src={ava02} alt='' className='w-25 h-25 rounded-2' />
           <div>
-            <h6 className='mb-0 mt-3'>Lia Franklin</h6>
-            <p>Customer</p>
+            <h6 className='mb-0 mt-3'>Victoria</h6>
+            <p>Travaler</p>
           </div>
         </div>
-      </div>
-      <div className='testimonial py-4 px-3'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          eiusmod tempor
         </p>
+      </div>
+      <div className='testimonial py-4 px-3'>
         <div className='d-flex align-items-center gap-4 mt-3'>
           <img src={ava03} alt='' className='w-25 h-25 rounded-2' />
           <div>
-            <h6 className='mb-0 mt-3'>John Doe</h6>
-            <p>Customer</p>
+            <h6 className='mb-0 mt-3'>Tommy</h6>
+            <p>Blogger</p>
           </div>
         </div>
-      </div>
-      <div className='testimonial py-4 px-3'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          eiusmod tempor incididunt ut
         </p>
+      </div>
+      <div className='testimonial py-4 px-3'>
         <div className='d-flex align-items-center gap-4 mt-3'>
           <img src={ava02} alt='' className='w-25 h-25 rounded-2' />
           <div>
@@ -95,6 +83,10 @@ const Testimonials = () => {
             <p>Customer</p>
           </div>
         </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt
+        </p>
       </div>
     </Slider>
   );

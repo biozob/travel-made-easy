@@ -65,7 +65,7 @@
   justify-content: center;
   width: 100%;
   padding: 0.7rem;
-  border-radius: 2rem;
+  border-radius: 10px;
   border: 1px solid var(--secondary-color);
 }
 
@@ -127,7 +127,7 @@
     row-gap: 1rem;
   }
   .tour__extra-details span {
-    font-style: 0.9rem;
+    font-size: 0.9rem;
   }
 
   .tour__extra-details span i {

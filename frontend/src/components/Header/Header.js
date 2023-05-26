@@ -13,16 +13,16 @@ const nav__links = [
     display: 'Home',
   },
   {
-    path: 'about',
-    display: 'About',
+    path: '/gallery',
+    display: 'Gallery',
   },
   {
     path: 'tours',
-    display: 'Tours',
+    display: 'Bookings',
   },
 ];
 
-const Header = () => {
+const Header = (props) => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const navigate = useNavigate();
@@ -64,7 +64,9 @@ const Header = () => {
             justify-content-between'
           >
             <div className='logo'>
-              <img src={logo} alt='' />
+              <Link to='home'>
+                <img src={logo} alt='' />
+              </Link>
             </div>
             <div className='navigation' ref={menuRef} onClick={toggleMenu}>
               <ul className='menu d-flex align-items-center gap-5'>
@@ -87,17 +89,23 @@ const Header = () => {
                 {user ? (
                   <>
                     <h5 className='mb-0'>{user.username}</h5>
-                    <Button className='btn btn-dark' onClick={logout}>
+                    <Button className='btn' onClick={logout}>
                       Logout
                     </Button>
                   </>
                 ) : (
                   <>
-                    <Button className='btn secondary__btn'>
-                      <Link to='login'>Login</Link>
+                    <Button
+                      className='btn secondary__btn'
+                      onClick={props.onShowLogin}
+                    >
+                      Login
                     </Button>
-                    <Button className='btn primary__btn'>
-                      <Link to='register'>Register</Link>
+                    <Button
+                      className='btn primary__btn'
+                      onClick={props.onShowRegister}
+                    >
+                      Register
                     </Button>
                   </>
                 )}

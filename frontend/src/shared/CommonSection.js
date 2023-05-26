@@ -8,7 +8,7 @@ const CommonSection = ({ title }) => {
       <Container>
         <Row>
           <Col lg='12'>
-            <h1>{title}</h1>
+            <h2 className='section__subtitle'>{title}</h2>
           </Col>
         </Row>
       </Container>

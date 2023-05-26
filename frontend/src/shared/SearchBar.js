@@ -57,11 +57,7 @@ function SearchBar() {
             </span>
             <div>
               <h6>Distance</h6>
-              <input
-                type='number'
-                placeholder='Distance k/m'
-                ref={distanceRef}
-              />
+              <input type='number' placeholder='k/m' ref={distanceRef} />
             </div>
           </FormGroup>
           <FormGroup className='d-flex gap-3 form__group form__group-last'>
@@ -69,13 +65,18 @@ function SearchBar() {
               <i className='ri-group-line'></i>
             </span>
             <div>
-              <h6>Max People</h6>
+              <h6>People</h6>
               <input type='number' placeholder='0' ref={maxGroupSizeRef} />
             </div>
           </FormGroup>
 
-          <span className='search__icon' type='submit' onClick={searchHandler}>
+          <span
+            className='search__icon d-flex align-items-center'
+            type='submit'
+            onClick={searchHandler}
+          >
             <i className='ri-search-line'></i>
+            See Available
           </span>
         </Form>
       </div>

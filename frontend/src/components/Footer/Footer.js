@@ -3,7 +3,6 @@ import './Footer.css';
 
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
 
 const quick__links = [
   {
@@ -16,7 +15,7 @@ const quick__links = [
   },
   {
     path: 'tours',
-    display: 'Tours',
+    display: 'Bookings',
   },
 ];
 
@@ -42,38 +41,7 @@ const Footer = () => {
     <footer className='footer'>
       <Container>
         <Row>
-          <Col lg='3'>
-            <div className='logo'>
-              <img src={logo} alt='' />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                veritatis repudiandae.
-              </p>
-              <div className='social__links d-flex align-center-items gap-4'>
-                <span>
-                  <Link to='#'>
-                    <i className='ri-youtube-line'></i>
-                  </Link>
-                </span>
-                <span>
-                  <Link to='#'>
-                    <i className='ri-github-fill'></i>
-                  </Link>
-                </span>
-                <span>
-                  <Link to='#'>
-                    <i className='ri-facebook-circle-line'></i>
-                  </Link>
-                </span>
-                <span>
-                  <Link to='#'>
-                    <i className='ri-instagram-line'></i>
-                  </Link>
-                </span>
-              </div>
-            </div>
-          </Col>
-          <Col lg='3'>
+          <Col lg='4'>
             <h5 className='footer__link-title'>Discover</h5>
             <ListGroup className='footer__quick-links'>
               {quick__links.map((item, index) => (
@@ -83,7 +51,7 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
-          <Col lg='3'>
+          <Col lg='4'>
             <h5 className='footer__link-title'>Quick Links</h5>
             <ListGroup className='footer__quick-links'>
               {quick__links2.map((item, index) => (
@@ -93,7 +61,7 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
-          <Col lg='3'>
+          <Col lg='4'>
             <h5 className='footer__link-title'>Contact</h5>
             <ListGroup className='footer__quick-links'>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>

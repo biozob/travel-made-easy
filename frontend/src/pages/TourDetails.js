@@ -114,7 +114,7 @@ const TourDetails = () => {
                         /per person
                       </span>
                       <span>
-                        <i className='ri-map-pin-time-line'></i> ${distance} k/m
+                        <i className='ri-map-pin-time-line'></i> {distance} k/m
                       </span>
                       <span>
                         <i className='ri-group-line'></i> {maxGroupSize} people

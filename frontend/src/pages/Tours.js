@@ -27,7 +27,7 @@ const Tours = () => {
 
   return (
     <>
-      <CommonSection title={'All Tours'} />
+      <CommonSection title={'All Bookings'} />
       <section>
         <Container>
           <Row>
