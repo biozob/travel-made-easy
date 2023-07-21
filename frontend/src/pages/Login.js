@@ -1,11 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { Form, FormGroup, Button } from 'reactstrap';
-import { Link, useNavigate } from 'react-router-dom';
 import '../styles/login.css';
 
 import { AuthContext } from '../context/AuthContext';
 import { BASE_URL } from '../utils/config';
-import Modal from '../components/UI/Modal';
 
 const Login = (props) => {
   const [credentials, setCredentials] = useState({
@@ -14,7 +12,6 @@ const Login = (props) => {
   });
 
   const { dispatch } = useContext(AuthContext);
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
@@ -39,7 +36,7 @@ const Login = (props) => {
       console.log(result.data);
 
       dispatch({ type: 'LOGIN_SUCCESS', payload: result.data });
-      navigate('/');
+      props.onClose();
     } catch (err) {
       dispatch({ type: 'LOGIN_FAILURE', payload: err.message });
     }
@@ -63,7 +60,7 @@ const Login = (props) => {
             <FormGroup>
               <input
                 type='password'
-                placeholder='password'
+                placeholder='Password'
                 required
                 id='password'
                 onChange={handleChange}

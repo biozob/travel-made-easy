@@ -1,11 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { Form, FormGroup, Button } from 'reactstrap';
-import { useNavigate } from 'react-router-dom';
 import '../styles/login.css';
 
 import { AuthContext } from '../context/AuthContext';
 import { BASE_URL } from '../utils/config';
-import Modal from '../components/UI/Modal';
 
 const Register = (props) => {
   const [credentials, setCredentials] = useState({
@@ -15,7 +13,6 @@ const Register = (props) => {
   });
 
   const { dispatch } = useContext(AuthContext);
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
@@ -37,7 +34,8 @@ const Register = (props) => {
       if (!res.ok) alert(result.message);
 
       dispatch({ type: 'REGISTER_SUCCESS' });
-      navigate('/login');
+      alert('Account created successfully');
+      props.onShowLogin();
     } catch (err) {
       alert(err.message);
     }
@@ -70,7 +68,7 @@ const Register = (props) => {
             <FormGroup>
               <input
                 type='password'
-                placeholder='password'
+                placeholder='Password'
                 required
                 id='password'
                 onChange={handleChange}

@@ -55,6 +55,13 @@
   cursor: pointer;
 }
 
+.rating__group span.active {
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  color: white;
+  background-color: var(--text-color);
+}
+
 .tour__reviews h4 {
   margin-bottom: 3rem;
 }

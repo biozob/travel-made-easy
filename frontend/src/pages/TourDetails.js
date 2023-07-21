@@ -130,19 +130,34 @@ const TourDetails = () => {
 
                     <Form onSubmit={submitHandler}>
                       <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
-                        <span onClick={() => setTourRating(1)}>
+                        <span
+                          className={tourRating === 1 ? 'active' : ''}
+                          onClick={() => setTourRating(1)}
+                        >
                           1 <i className='ri-star-s-fill'></i>
                         </span>
-                        <span onClick={() => setTourRating(2)}>
+                        <span
+                          className={tourRating === 2 ? 'active' : ''}
+                          onClick={() => setTourRating(2)}
+                        >
                           2 <i className='ri-star-s-fill'></i>
                         </span>
-                        <span onClick={() => setTourRating(3)}>
+                        <span
+                          className={tourRating === 3 ? 'active' : ''}
+                          onClick={() => setTourRating(3)}
+                        >
                           3 <i className='ri-star-s-fill'></i>
                         </span>
-                        <span onClick={() => setTourRating(4)}>
+                        <span
+                          className={tourRating === 4 ? 'active' : ''}
+                          onClick={() => setTourRating(4)}
+                        >
                           4 <i className='ri-star-s-fill'></i>
                         </span>
-                        <span onClick={() => setTourRating(5)}>
+                        <span
+                          className={tourRating === 5 ? 'active' : ''}
+                          onClick={() => setTourRating(5)}
+                        >
                           5 <i className='ri-star-s-fill'></i>
                         </span>
                       </div>
