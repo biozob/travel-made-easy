@@ -8,7 +8,6 @@ import Newsletter from '../shared/Newsletter';
 const SearchResultList = () => {
   const location = useLocation();
   const [data] = useState(location.state);
-  console.log(data);
 
   return (
     <>
@@ -16,7 +15,7 @@ const SearchResultList = () => {
       <section>
         <Container>
           <Row>
-            {data.length === 0 ? (
+            {!data || data.length === 0 ? (
               <h4 className='text-center'>No bookings found</h4>
             ) : (
               data?.map((tour) => (
