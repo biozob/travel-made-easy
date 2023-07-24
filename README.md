@@ -16,6 +16,12 @@ Go to the project directory
   cd travel-made-easy
 ```
 
+Go to backend folder and rename .env.example to .env
+
+```bash
+  mv .env.example .env
+```
+
 Install with Docker
 
 ```bash

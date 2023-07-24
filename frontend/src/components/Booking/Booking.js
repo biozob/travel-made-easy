@@ -107,6 +107,7 @@ const Booking = ({ tour, avgRating }) => {
               placeholder='Guest'
               id='guestSize'
               required
+              min='1'
               onChange={handleChange}
             />
           </FormGroup>
